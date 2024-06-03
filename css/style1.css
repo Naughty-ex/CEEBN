@@ -15,7 +15,7 @@ background-color: #f1f4fb;
 }
 
 
-colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
+/* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae */
 .sect{
   padding: 90px 0;
   position: relative;
@@ -86,9 +86,9 @@ colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
   margin-bottom: 50px;
 }
 
-.{
+/* .{
   display: inline-block;
-}
+} */
 
 .price-box__img, .price-box__img1, .price-box__img2, .price-box__img3, .price-box__img4 {
   width:130px;
@@ -102,17 +102,17 @@ colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
 
 
 .price-box--purple .price-box__img{
-  background-image: url("./i15.jpg");
+  background-image: url("/img/i15.jpg");
 
 }
 
 .price-box--purple .price-box__img1{
-  background-image: url("img/carousel-2.png");
+  background-image: url("/img/carousel-2.png");
 
 }
 
 .price-box--purple .price-box__img2{
-  background-image: url("img/carousel-2.png");
+  background-image: url("/img/carousel-2.png");
 
 }
 
@@ -122,7 +122,7 @@ colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
 }
 
 .price-box--purple .price-box__img4{
-  background-image: url("img/IMG_2509.JPG");
+  background-image: url("/img/IMG_2509.JPG");
 
 }
 
@@ -156,9 +156,9 @@ colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
   color: #8a3aff;
 }
 
-.price-box--violet .price-box__dollar{
-  /* color: #6f79ff; */
-}
+/* .price-box--violet .price-box__dollar{
+  color: #6f79ff;
+} */
 
 .price-box--blue .price-box__dollar{
   color: #3a9fff;
@@ -210,10 +210,10 @@ colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
   /* color: #8a3aff; */
   color: red;
 }
-
+/* 
 .price-box--violet .price-box__list-el:before{
-  /* color: #6f79ff; */
-}
+  color: #6f79ff;
+} */
 
 .price-box--blue .price-box__list-el:before{
   color: #3a9fff;
@@ -265,9 +265,9 @@ color: #fff;
 }
 
 
-.btn--purple {
-    /* background-color: #3a9fff; */
-}
+/* .btn--purple {
+    background-color: #3a9fff;
+} */
 
 .btn--purple:hover{
     background-color: #3a9fff;
@@ -384,7 +384,7 @@ font-weight: 700;
 .item__avatar{
 height: 45px;
 width: 45px;
-background-image: url("img/CEEBN\ Offcial.png");
+background-image: url("/img/CEEBN\ Offcial.png");
 background-size: cover;
 border-radius: 50%;
 margin: 50px auto 15px auto;
