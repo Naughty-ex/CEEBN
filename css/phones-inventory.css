@@ -139,8 +139,23 @@
   }
 
 
+
+  /* SAMSUNG */
+
+  .sa, .sb, .sc, .sd, .se, .sf, .sg, 
+.sh, .si, .sj, .sk, .sl, .sm, .sn,
+.so, .sp, .sq, .sr, .ss, .st, .su,
+.sw, .sx, .sy, .sz  {
+    width:190px;
+    height:235px;
+    border-radius: 10px;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+
 .sa {
-    background-image: url(/img/i15pm.PNG);
+    background-image: url(/img/carousel-2.png);
   }
 
 .b {
@@ -266,14 +281,133 @@
     background-image: url(/img/i15pm.PNG);
   }
 
-  
-  .aa {
-    background-image: url(/img/i15pm.PNG);
-  }
 
-  
-  .ab {
-    /* background-image: url(/img/i15pm.PNG); */
-  }
+/* INFINIX */
 
+.xa {
+  background-image: url(/img/i15pm.PNG);
+}
+
+.b {
+  background-image: url(/img/i15p.PNG);
+}
+
+
+.c {
+  background-image: url(/img/i15+.PNG);
+}
+
+.d {
+  background-image: url(/img/i15.PNG);
+}
+
+
+.e {
+  background-image: url(/img/i14pm.PNG);
+}
+
+
+.f {
+  background-image: url(/img/i14pm.PNG);
+}
+
+
+.g {
+  background-image: url(/img/i14+.PNG);
+}
+
+
+.h {
+  background-image: url(/img/i13.PNG);
+}
+
+
+.i {
+  background-image: url(/img/i13m.PNG);
+}
+
+
+.j {
+  background-image: url(/img/i12pm.JPG);
+}
+
+
+.k {
+  background-image: url(/img/i12p.JPG);
+}
+
+
+.l {
+  background-image: url(/img/i12.JPG);
+}
+
+
+.m {
+  background-image: url(/img/i12.JPG);
+}
+
+
+.n {
+  background-image: url(/img/i11pm.PNG);
+}
+
+
+.o {
+  background-image: url(/img/i11p.JPG);
+}
+
+
+.p {
+  background-image: url(/img/i11.PNG);
+}
+
+
+.q {
+  background-image: url(/img/ixr.PNG);
+}
+
+
+.r {
+  background-image: url(/img/ixm.JPG);
+}
+
+
+.s {
+  background-image: url(/img/ixs.JPG);
+}
+
+
+.t {
+  background-image: url(/img/ix.PNG);
+}
+
+
+.u {
+  background-image: url(/img/ise2.PNG);
+}
+
+
+.v {
+  background-image: url(/img/i15pm.PNG);
+}
+
+
+.w {
+  background-image: url(/img/i15pm.PNG);
+}
+
+
+.x {
+  background-image: url(/img/i15pm.PNG);
+}
+
+
+.y {
+  background-image: url(/img/i15pm.PNG);
+}
+
+
+.z {
+  background-image: url(/img/i15pm.PNG);
+}
   
