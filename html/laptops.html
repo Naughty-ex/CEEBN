@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Elite-Essentials - Phone Repair/Maintainance</title>
+    <title>CEEBN Enterprises - Phone Repair/Maintainance</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="/css/stylesheet1.css" rel="stylesheet">
+    <!-- <link href="/css/stylesheet1.css" rel="stylesheet"> -->
 
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -24,6 +24,7 @@
     <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="flipping.css">
+    <link rel="stylesheet" href="/css/laptop.css">
 </head>
 
 <body>
@@ -115,6 +116,9 @@
         </div>
     </nav>
 
+    
+
+
 
 
 
@@ -152,14 +156,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Stay Connected with Elite Essentials - Your Trusted Phone Repair Service Provider!
-                        New Services Expansion: We are thrilled to announce the expansion of our services to include repairs for tablets, 
-                        laptops, and gaming consoles! Our skilled technicians are now equipped to handle a wider range of electronic devices, ensuring that you can rely on us for all your repair needs.
+                    <p>Stay Connected with CEEBN Enterprices - Your Trusted Phone Store!
+                        New Services Expansion: We are thrilled to announce the expansion of our services to include sales of tablets, 
+                       and gaming consoles!  ensuring that you can rely on us for all your gadgets.
                     </p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -167,7 +167,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Elite-Essentials</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">CEEBN Enterprises</a>, All Right Reserved.
 
                        
                 </div>
@@ -197,3 +197,245 @@
       <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
       <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 </body>
+
+
+
+/* 
+=========================
+Fonts
+=========================
+
+font-family: 'Outfit', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* 
+========================
+Variables
+========================
+*/
+
+
+:root {
+    
+    font-size: 15px;
+    
+    /* Primary */
+    --var-soft-blue: hsl(215, 51%, 70%);
+    --var-cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --var-main-darkest: hsl(217, 54%, 11%);
+    --var-card-dark: hsl(216, 50%, 16%);
+    --var-line-dark: hsl(215, 32%, 27%);
+    --var-lightest: white;
+    
+    /* Fonts */
+    
+    --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
+    
+    --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
+    
+    --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
+}
+
+/* 
+=======================
+Setup
+=======================
+*/
+
+html {
+    /* box-sizing: border-box; */
+}
+
+*, *::before, *::after {
+    /* box-sizing: inherit; */
+    /* margin: 0; */
+/* } */
+
+
+/* this is affecting other images */
+/* img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+} */
+
+a {
+    color: inherit;
+}
+
+/* 
+
+Eye view
+
+https://i.postimg.cc/9MtT4GZY/view.png' border='0' alt='view */
+
+/*
+=========================
+Font Styling
+=========================
+*/
+
+h1 {
+    font: var(--var-heading);
+    color: var(--var-lightest);
+    padding: 1.2em 0;
+}
+
+h2 {
+    font: var(--var-small-heading);
+    color: var(--var-lightest);
+    /* padding on .coin-base */
+}
+
+p {
+    font: var(--var-para);
+    color: var(--var-soft-blue);
+}
+
+span {
+    color: white;
+}
+/* 
+=====================
+Classes
+=====================
+*/
+
+/* LAYOUT */
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+    width: 100%;
+    /* max-width: 400px; */
+    /* margin: 2em auto; */
+    margin: 20px;
+    background-color: var(--var-card-dark);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.coin-base, .time-left, .card-attribute {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.card-attribute {
+    padding-bottom: 1.5em;
+    border-top: 2px solid var(--var-line-dark);
+}
+
+a.hero-image-container {
+    position: relative;
+    display: block;
+}
+
+
+
+/* Details */
+
+/* img.eye {
+    position: absolute;
+    width: 100%;
+    max-width: 2em;
+    top: 44%;
+    left: 43%;
+} */
+
+@media (min-width:400px) {
+  img.eye {
+    /* max-width: 3em; */
+  }
+}
+
+.hero-image-container::after {
+    content: '';
+    /* background-image: url("https://i.postimg.cc/9MtT4GZY/view.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.hero-image-container:hover::after {
+  opacity: 1;
+}
+
+.small-image {
+    width: 1.2em;
+    margin-right: .5em;
+}
+
+.small-avatar {
+    width: 2em;
+    border-radius: 200px;
+    outline: 2px solid white;
+    margin-right: 1.4em;
+}
+
+div.attribution {
+    margin: 0 auto;
+    width: 100%;
+    font: var(--var-para);
+    text-align: center;
+    padding: 1.5em 0 4em 0;
+    color: var(--var-line-dark);
+}
+.attribution a {
+    color: var(--var-soft-blue);
+}
+
+@media (min-width:600px) {
+    body {
+        /* font-size: 18px; */
+    }
+}
+
+@media screen and (max-width:1024px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:720px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}

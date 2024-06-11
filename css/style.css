@@ -353,9 +353,7 @@
     transition: .3s;
 }
 
-.footer .btn.btn-social:hover {
-    color: var(--primary);
-}
+
 
 .footer .btn.btn-link {
     display: block;
@@ -402,4 +400,8 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
 }
