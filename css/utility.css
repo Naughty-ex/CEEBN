@@ -1,0 +1,37 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 8px #fff; }
+    50% { text-shadow: 0 0 20px rgb(6, 21, 154), 0 0 30px rgb(30, 99, 236); }
+    100% { text-shadow: 0 0 8px #fff; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.row__title {
+    /* Typing effect setup */
+    overflow: hidden; /* Ensures the content is not displayed outside the boundary */
+    border-right: .5em solid rgb(37, 120, 236); /* The caret */
+    white-space: wrap; /* Keeps the text on a single line */
+    margin: 0 auto; /* Center the text */
+    letter-spacing: .5em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret,
+        glow 2.5s ease-in-out 3.5s infinite,
+        bounce 1s ease 6s;
+    /* Adjust the timing as needed */
+}
+
+
