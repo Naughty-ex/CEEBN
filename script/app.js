@@ -11,3 +11,18 @@ $(document).ready(function(){
   });
 });
 
+document.getElementById('searchInput').addEventListener('keyup', function(event) {
+    var searchQuery = event.target.value.toLowerCase();
+    var items = document.querySelectorAll('.row.row--center.row--margin .price-box__title');
+
+    items.forEach(function(item) {
+        var itemText = item.textContent.toLowerCase();
+        var box = item.closest('.col-md-4');
+        if (itemText.includes(searchQuery)) {
+            box.style.display = '';
+        } else {
+            box.style.display = 'none';
+        }
+    });
+});
+

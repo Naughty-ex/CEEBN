@@ -24,7 +24,7 @@ main {
   background-color: rgba(59, 48, 48, 0.096);
   font-style: italic;
   font-weight: 900;
-  font-size: 30px;
+  /* font-size: 10px; */
   cursor: pointer;
   color: #000046;
 }
