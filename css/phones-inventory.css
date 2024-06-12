@@ -332,3 +332,79 @@
   background-image: url(/img/i15pm.PNG);
 }
   
+/* itel */
+
+.itel1 {
+  width: 188px;
+  height: 235px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.itel1 {
+  background-image: url(/img/IMG_2509.JPG);
+}
+
+.b {
+  background-image: url(/img/i15p.PNG);
+}
+
+
+.c {
+  background-image: url(/img/i15+.PNG);
+}
+
+.d {
+  background-image: url(/img/i15.PNG);
+}
+
+/* Laptops */
+
+.lap1 {
+  width: 195px;
+  height: 235px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+}
+
+.lap1 {
+  background-image: url(/img/IMG_2513.PNG);
+}
+
+.b {
+  background-image: url(/img/i15p.PNG);
+}
+ /* Redmi */
+
+ .red1 {
+  width: 188px;
+  height: 235px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+ }
+
+ .red1 {
+  background-image: url(/img/IMG_2508.JPG);
+}
+
+/* Consoles */
+
+.ps1 {
+  width: 220px;
+  height: 240px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.ps1 {
+  background-image: url(/img/ps1.png);
+}
