@@ -64,7 +64,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active"></a>
-                <a href="laptops.html" class="nav-item nav-link">Laptops</a>
+                <a onclick="redirectToLaptops()" class="nav-item nav-link">Laptops</a>
                 <div class="nav-item dropdown">
                     <a href="iphones.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Phones</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -81,8 +81,8 @@
                 <div class="nav-item dropdown">
                     <a href="accessories.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Accessories</a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="accessories.html" class="dropdown-item">Speakers & HeadPhones</a>
-                        <a href="accessories.html" class="dropdown-item">Phone Casing</a>
+                        <a href="accessories.html" class="dropdown-item cus-p">Speakers & HeadPhones</a>
+                        <a href="accessories.html" class="dropdown-item cus-p">Phone Casing</a>
                         <!-- <a href="accessories.html" class="dropdown-item">Charger</a>
                         <a href="accessories.html" class="dropdown-item">#</a>
                         <a href="accessories.html" class="dropdown-item">#</a> -->
@@ -93,8 +93,8 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consoles</a>
                     <div class="dropdown-menu fade-up m-0">
-                    <a href="consoles.html" class="dropdown-item">PlayStation</a>
-                    <a href="consoles.html" class="dropdown-item">X-Box</a>
+                    <a onclick="redirectToConsole()" class="dropdown-item cus-p">PlayStation</a>
+                    <a onclick="redirectToConsole()" class="dropdown-item cus-p">X-Box</a>
                     <!-- <a href="consoles.html" class="dropdown-item">free-space-1</a>
                     <a href="consoles.html" class="dropdown-item">free-space-2</a>
                     <a href="consoles.html" class="dropdown-item">free-space-3</a> -->
@@ -477,6 +477,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../script/redirect.js"></script>
 </div>
 </body>
 </html>
