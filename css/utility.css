@@ -22,7 +22,6 @@
 .row__title {
     /* Typing effect setup */
     overflow: hidden; 
-    border-right: .5em solid rgb(37, 120, 236);
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .5em; 
@@ -32,5 +31,15 @@
         glow 2.5s ease-in-out 3.5s infinite,
         bounce 1s ease 6s;
 }
+
+/* .animate {
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret,
+        glow 2.5s ease-in-out 3.5s infinite,
+        bounce 1s ease 6s;
+} */
+
+
 
 

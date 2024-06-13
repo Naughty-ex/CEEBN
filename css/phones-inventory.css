@@ -408,3 +408,19 @@
 .ps1 {
   background-image: url(/img/ps1.png);
 }
+
+/* PoweBanks*/
+
+.powerb1 {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.powerb1 {
+  background-image: url(/img/powerb1.JPG);
+  margin-top: 58px;
+}
