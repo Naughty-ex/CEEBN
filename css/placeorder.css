@@ -1,0 +1,429 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  /* padding: 96px; */
+  /* font-size: 21px; */
+  background: rgba(184, 173, 173, 0.349);
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 96px;
+}
+
+.marquee {
+  background-color: rgba(59, 48, 48, 0.096);
+  font-style: italic;
+  font-weight: 900;
+  /* font-size: 10px; */
+  cursor: pointer;
+  color: #000046;
+}
+
+.sub-nav {
+  background-color: #ffffffef;
+}
+
+.sub-nav p {
+  margin-left: 10px;
+}
+
+.box-container {
+  display: flex;
+  /* border: 2px solid red; */
+  padding: 5px;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.img-container {
+  display: flex;
+  padding: 10px;
+  /* border: 1px solid green; */
+  background-color: #ccc9c949;
+
+  img {
+    height: 450px;
+    width: 500px;
+    border-radius: 20px;
+  }
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  padding: 20px;
+
+  span {
+    color: red;
+  }
+}
+
+.buy-btn {
+  /* border: inherit; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 80px;
+  gap: 20px;
+  
+}
+
+.buy-btn button {
+  position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  border: none;
+  border-radius: 30px;
+  background-color: #0640ffcb;
+}
+
+.buy-btn button a {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #f7f3f3;
+	font-weight: bolder;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(5px);
+}
+
+.buy-btn button:hover {
+  letter-spacing: 3px;
+}
+
+.buy-btn button a::before {
+  content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+
+.buy-btn button:hover a::before {
+  transform: skewX(45deg) translate(200px);
+}
+
+.buy-btn button::before {
+  content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+
+.buy-btn button:hover::before {
+  bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.buy-btn button::after {
+  content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+
+.buy-btn button:hover::after {
+  top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.buy-btn button:nth-child(1)::before,
+.buy-btn button:nth-child(1)::after {
+  background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+
+.buy-btn button:nth-child(2)::before,
+.buy-btn button:nth-child(2)::after {
+  background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1024px) {
+  /* body {
+    padding: 96px 48px 24px;
+  } */
+  article {
+    width: 100%;
+    min-width: 100%;
+  }
+  section.card {
+    min-width: 100%;
+    margin: 64px 0;
+    padding: 88px 36px 36px;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  section.card .text-content {
+    width: 100%;
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 0px;
+  }
+
+  section.card .visual {
+    width: 150px;
+    height: 150px;
+    right: 16px;
+    left: auto;
+    border-radius: 50%;
+  }
+
+  section.card .visual img{
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media all and (min-width: 1025px) {
+  section.card .text-content {
+    width: 100%;
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 20px;
+  }
+
+  section.card .visual {
+    border: 1.5px solid blue;
+  }
+}
+
+@media all and (max-width: 720px) {
+  /* body {
+    padding: 48px 24px 0;
+  } */
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 5px;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  
+  .img-container {
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid green; */
+    background-color: #ccc9c99c;
+    justify-content: center;
+  
+    img {
+      height: 250px;
+      width: 300px;
+      border-radius: 20px;
+    }
+  }
+
+  main {
+    padding: 48px 24px 0;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    padding: 20px;
+  
+    span {
+      color: red;
+      font-size: 22px;
+    }
+  }
+  
+  .buy-btn {
+    /* border: inherit; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    justify-content: center;
+    width: 300px;
+    margin-top: 80px;
+    /* gap: 20px; */
+    
+  }
+  
+  .buy-btn button {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    background-color: #0640ffcb;
+  }
+  
+  .buy-btn button a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #f7f3f3;
+    font-weight: bolder;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+  }
+  
+  .buy-btn button:hover {
+    letter-spacing: 3px;
+  }
+  
+  .buy-btn button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+  }
+  
+  .buy-btn button:hover a::before {
+    transform: skewX(45deg) translate(200px);
+  }
+  
+  .buy-btn button::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .buy-btn button:hover::before {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .buy-btn button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+  .buy-btn button:hover::after {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+  .buy-btn button:nth-child(1)::before,
+  .buy-btn button:nth-child(1)::after {
+    background: #2db2ff;
+    box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+      0 0 60px #2db2ff;
+  }
+  
+  .buy-btn button:nth-child(2)::before,
+  .buy-btn button:nth-child(2)::after {
+    background: #2db2ff;
+    box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+      0 0 60px #2db2ff;
+  }
+
+  
+}

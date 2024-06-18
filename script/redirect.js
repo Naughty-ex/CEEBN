@@ -22,4 +22,8 @@ function redirectToHome() {
   window.location.href = "../html/index.html";
 }
 
-// 
+// redirect to PS5 Pad 
+
+function redirectPs5Pad() {
+  window.location.href = "../html/placeorder.html";
+}

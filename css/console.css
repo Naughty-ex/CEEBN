@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  /* padding: 96px; */
+  /* font-size: 21px; */
+  background: rgba(184, 173, 173, 0.349);
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 96px;
+}
+
+.marquee {
+  background-color: rgba(59, 48, 48, 0.096);
+  font-style: italic;
+  font-weight: 900;
+  /* font-size: 10px; */
+  cursor: pointer;
+  color: #000046;
+}
+
+.sub-nav {
+  background-color: #ffffffef;
+}
+
+.sub-nav p {
+  margin-left: 10px;
+}
+
+
+section.card {
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  border-radius: 24px 24px 24px 48px;
+  padding: 48px 48px 48px 308px;
+  margin: 84px 0;
+  min-width: 640px;
+  display: flex;
+  height: 440px;
+  flex-direction: row;
+  align-self: flex-start;
+  position: relative;
+  box-shadow: 5px 0 0 0 rgba(204,204,204,0.3), -5px 0 0 0 rgba(204,204,204,0.3), 0 5px 0 0 rgba(204,204,204,0.3);
+}
+section.card .text-content {
+  display: flex;
+  flex-direction: column;
+  width:calc(60vw - 192px);
+}
+section.card .text-content h3 {
+  margin: 0;
+  font-size: 1.5em;
+  max-width: 20ch;
+  color: #fff;
+  margin-left: 20%;
+}
+section.card .text-content p{
+  margin: 25px 0 10px;
+  color: #fff;
+  margin-left: 20%;
+}
+
+.p {
+  margin: 25px 0 24px;
+  color: #fff;
+  margin-left: 20%;
+}
+
+section.card .text-content a {
+  border: 3px solid #f2f2f2;
+  color: #ffffff;
+  align-self: flex-start;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  transition: 400ms all;
+  margin-left: 20%;
+}
+section.card .text-content a:hover {
+  background: #051c5e;
+  color: white;
+}
+section.card .visual {
+  width: 380px;
+  height: 100%;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+section.card .visual img {
+  height: 100%;
+  width: 100%;
+  /* background-color: #292828; */
+}
+article {
+  margin: auto;
+  display: block;
+  width:calc(60vw + 248px);
+  max-width:calc(920px + 248px);
+  min-width:calc(640px + 248px); 
+}
+@media all and (max-width: 1024px) {
+  /* body {
+    padding: 96px 48px 24px;
+  } */
+  article {
+    width: 100%;
+    min-width: 100%;
+  }
+  section.card {
+    min-width: 100%;
+    margin: 64px 0;
+    padding: 88px 36px 36px;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  section.card .text-content {
+    width: 100%;
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 0px;
+  }
+
+  section.card .visual {
+    width: 150px;
+    height: 150px;
+    right: 16px;
+    left: auto;
+    border-radius: 50%;
+  }
+
+  section.card .visual img{
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media all and (min-width: 1025px) {
+  section.card .text-content {
+    width: 100%;
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 20px;
+  }
+
+  section.card .visual {
+    border: 1.5px solid blue;
+  }
+}
+
+@media all and (max-width: 720px) {
+  /* body {
+    padding: 48px 24px 0;
+  } */
+  section.card {
+    margin: 64px 0;
+    padding: 88px 36px 36px;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  main {
+    padding: 48px 24px 0;
+  }
+
+  section.card .text-content h3 {
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 0px;
+  }
+  
+  section.card .text-content p,
+  section.card .text-content a {
+    font-size: 0.8em;
+  }
+
+  /* section.card .text-content a {
+    height: 40px;
+    padding: 8px 12px;
+  } */
+
+  .p {
+    margin: 25px 0 24px;
+    color: #fff;
+    margin-left: 0px;
+    font-size: 0.8em;
+  }
+
+  section.card .visual {
+    width: 150px;
+    height: 150px;
+    right: 16px;
+    left: auto;
+    border-radius: 50%;
+  }
+  section.card .visual img{
+    width: 100%;
+    height: auto;
+    }
+}
+
+/* @media all and (max-width: 480px) {
+  section.card {
+    padding: 16px;
+  }
+  section.card .text-content h3 {
+    font-size: 1em;
+    margin-top: 25px;
+  }
+  section.card .text-content p,
+  section.card .text-content a {
+    font-size: 0.8em;
+  }
+
+  section.card .visual {
+    width: 80px;
+    height: 80px;
+  }
+} */
+
+
+.deals {
+  /* border: 2px solid red; */
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 10px solid #051d5e5e;
+
+
+}
+
+.deals-heading {
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: inherit;
+  background-color: #051d5e5e;
+  font-family: poppins;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.deals-container {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.crd {
+  display: flex;
+  /* border: 1px solid rgba(47, 0, 255, 0.308); */
+  align-items: flex-end;
+  height: 200px;
+  width: 150px;
+  background-image: url(../images/apple-macbook-pro-14-inch-macbook-pro-14-inch-m1.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.crd-content {
+  /* border: 1px solid rgb(27, 35, 73); */
+  background-color: #695d5d3a;
+  height: 90px;
+  width: 100%;
+  padding: 5px;
+  align-items: flex-end;
+}
+
+.crd-content h2 {
+  font-size: 13px;
+  font-weight: bolder;
+  a {
+    color: black;
+    font-weight: 900;
+  }
+  text-decoration: underline;
+}
+
+.crd-content p {
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Deals pictures */
+
+.dell-deal {
+  background-image: url(../images/HP\ probook\ 430\ back.jpg);
+}
+
+.hp-deal {
+  background-image: url(../images/HP.png);
+}
+
+
+@media all and (max-width: 720px) {
+  .remove {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .remove-2 {
+    display: none;
+  }
+}
+
