@@ -1,8 +1,12 @@
-.ia, .ib, .ic, .id, .ie, .if, .ig, 
-.ih, .ii, .ij, .ik, .il, .im, .in,
-.io, .ip, .iq, .ir, .is, .it, .iu,
-.iw, .ix, .iy, .iz  {
-    width:190px;
+/* iphones  */
+.iphone15pm, .iphone15p, .iphone15plus, .iphone15, 
+.iphone14pm, .iphone14p, .iphone14plus, .iphone14, 
+.iphone13pm, .iphone13p, .iphone13, .iphone13m, 
+.iphone12pm, .iphone12p, .iphone12,
+.iphone11pm, .iphone11p, .iphone11, 
+.iphoneXr, .iphoneXsm, .iphoneXs, .iphoneX,
+.iphonese2, .ix, .iy, .iz  {
+    width:188px;
     height:235px;
     border-radius: 10px;
     background-position: center;
@@ -11,131 +15,116 @@
   }
 
 
-  .ia {
+  .iphone15pm {
     background-image: url(/img/i15pm.PNG);
   }
 
-.ib {
+.iphone15p {
     background-image: url(/img/i15p.PNG);
   }
 
   
-.ic {
+.iphone15plus {
     background-image: url(/img/i15+.PNG);
   }
   
-  .id {
+  .iphone15 {
     background-image: url(/img/i15.PNG);
   }
 
   
-  .ie {
+  .iphone14pm {
     background-image: url(/img/i14pm.PNG);
   }
 
   
-  .if {
+  .iphone14p {
     background-image: url(/img/i14pm.PNG);
   }
 
   
-  .ig {
+  .iphone14plus {
     background-image: url(/img/i14+.PNG);
   }
 
   
-  .ih {
-    background-image: url(/img/i13.PNG);
+  .iphone14 {
+    background-image: url(/img/i14+.PNG);
+  }
+
+
+  .iphone13pm {
+    background-image: url(/img/i13pm.PNG);
+  }
+
+
+  .iphone13p {
+    background-image: url(/img/i13p.PNG);
   }
 
   
-  .ii {
+  .iphone13m {
     background-image: url(/img/i13m.PNG);
   }
 
   
-  .ij {
+  .iphone13 {
+    background-image: url(/img/i13.PNG);
+  }
+
+
+  .iphone12pm {
     background-image: url(/img/i12pm.JPG);
   }
 
   
-  .ik {
+  .iphone12p {
     background-image: url(/img/i12p.JPG);
   }
 
   
-  .il {
+  .iphone12 {
     background-image: url(/img/i12.JPG);
   }
 
   
-  .im {
-    background-image: url(/img/i12.JPG);
-  }
-
-  
-  .in {
+  .iphone11pm {
     background-image: url(/img/i11pm.PNG);
   }
 
   
-  .io {
+  .iphone11p {
     background-image: url(/img/i11p.JPG);
   }
 
   
-  .ip {
+  .iphone11 {
     background-image: url(/img/i11.PNG);
   }
 
   
-  .iq {
+  .iphoneXr {
     background-image: url(/img/ixr.PNG);
   }
 
   
-  .ir {
+  .iphoneXsm {
     background-image: url(/img/ixm.JPG);
   }
 
   
-  .is {
+  .iphoneXs {
     background-image: url(/img/ixs.JPG);
   }
 
   
-  .it {
+  .iphoneX {
     background-image: url(/img/ix.PNG);
   }
 
   
-  .iu {
+  .iphonese2 {
     background-image: url(/img/ise2.PNG);
-  }
-
-  
-  .iv {
-    background-image: url(/img/i15pm.PNG);
-  }
-
-  
-  .iw {
-    background-image: url(/img/i15pm.PNG);
-  }
-
-  
-  .ix {
-    background-image: url(/img/i15pm.PNG);
-  }
-
-  
-  .iy {
-    background-image: url(/img/i15pm.PNG);
-  }
-
-  
-  .iz {
-    background-image: url(/img/i15pm.PNG);
   }
 
 
@@ -180,81 +169,13 @@
   .f {
     background-image: url(/img/i14pm.PNG);
   }
-
-  
-  .g {
-    background-image: url(/img/i14+.PNG);
-  }
-
-  
-  .h {
-    background-image: url(/img/i13.PNG);
-  }
-
-  
-  .i {
-    background-image: url(/img/i13m.PNG);
-  }
-
-  
-  .j {
-    background-image: url(/img/i12pm.JPG);
-  }
-
-  
-  .k {
-    background-image: url(/img/i12p.JPG);
-  }
-
   
   .l {
     background-image: url(/img/i12.JPG);
   }
 
   
-  .m {
-    background-image: url(/img/i12.JPG);
-  }
-
   
-  .n {
-    background-image: url(/img/i11pm.PNG);
-  }
-
-  
-  .o {
-    background-image: url(/img/i11p.JPG);
-  }
-
-  
-  .p {
-    background-image: url(/img/i11.PNG);
-  }
-
-  
-  .q {
-    background-image: url(/img/ixr.PNG);
-  }
-
-  
-  .r {
-    background-image: url(/img/ixm.JPG);
-  }
-
-  
-  .s {
-    background-image: url(/img/ixs.JPG);
-  }
-
-  
-  .t {
-    background-image: url(/img/ix.PNG);
-  }
-
-  
-  .u {
-    background-image: url(/img/ise2.PNG);
-  }
 
   
   .v {
@@ -411,3 +332,95 @@
   background-image: url(/img/i15pm.PNG);
 }
   
+/* itel */
+
+.itel1 {
+  width: 188px;
+  height: 235px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.itel1 {
+  background-image: url(/img/IMG_2509.JPG);
+}
+
+.b {
+  background-image: url(/img/i15p.PNG);
+}
+
+
+.c {
+  background-image: url(/img/i15+.PNG);
+}
+
+.d {
+  background-image: url(/img/i15.PNG);
+}
+
+/* Laptops */
+
+.lap1 {
+  width: 195px;
+  height: 235px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+}
+
+.lap1 {
+  background-image: url(/img/IMG_2513.PNG);
+}
+
+.b {
+  background-image: url(/img/i15p.PNG);
+}
+ /* Redmi */
+
+ .red1 {
+  width: 188px;
+  height: 235px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+ }
+
+ .red1 {
+  background-image: url(/img/IMG_2508.JPG);
+}
+
+/* Consoles */
+
+.ps1 {
+  width: 220px;
+  height: 240px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.ps1 {
+  background-image: url(/img/ps1.png);
+}
+
+/* PoweBanks*/
+
+.powerb1 {
+  width: 220px;
+  height: 180px;
+  border-radius: 10px;
+  background-position: center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.powerb1 {
+  background-image: url(/img/powerb1.JPG);
+  margin-top: 58px;
+}

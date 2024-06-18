@@ -26,3 +26,20 @@ document.getElementById('searchInput').addEventListener('keyup', function(event)
     });
 });
 
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const observer = new IntersectionObserver((entries) => {
+//       entries.forEach(entry => {
+//           if (entry.isIntersecting) {
+//               entry.target.classList.add('animate');
+//           } else {
+//               entry.target.classList.remove('animate');
+//           }
+//       });
+//   });
+
+//   const elem = document.querySelector('.row__title');
+//   observer.observe(elem);
+// });
+
+
