@@ -456,10 +456,11 @@
 }
 
 .marquee {
-    background-color: rgba(59, 48, 48, 0.096);
+    /* background-color: #1885ed; */
     font-style: italic;
     font-weight: 900;
     /* font-size: 10px; */
     cursor: pointer;
     color: #000046;
+    margin-top: 0;
   }
