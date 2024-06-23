@@ -50,7 +50,7 @@
   <!-- NAVIGATION BAR -->
 
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+    <a onclick="redirectToHome()" class="navbar-brand d-flex align-items-center px-4 px-lg-5 cus-p">
       <h2 class="m-0 text-primary"> <img src="/img/CEEBN Offcial.png" height="40px" alt="">
            CEEBN Enterprises</h2>
   </a>
@@ -59,28 +59,28 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a onclick="redirectToHome()" class="nav-item nav-link active"></a>
-            <a onclick="redirectToHome()" class="nav-item nav-link">Home</a>
+            <a onclick="redirectToHome()" class="nav-item nav-link active cus-p"></a>
+            <a onclick="redirectToHome()" class="nav-item nav-link cus-p">Home</a>
             <div class="nav-item dropdown">
                 <a href="iphones.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Phones</a>
                 <div class="dropdown-menu fade-up m-0">
-                    <a href="iphones.html" class="dropdown-item">iPhones</a>
-                     <a href="iphones.html" class="dropdown-item">Samsung</a>
-                     <a href="iphones.html" class="dropdown-item">iTEL</a>
-                     <a href="iphones.html" class="dropdown-item">Tecno</a>
-                    <a href="iphones.html" class="dropdown-item">Redmi</a>
-                    <a href="iphones.html" class="dropdown-item">free-space-3</a>
-                    <a href="iphones.html" class="dropdown-item">free-space-4</a>
+                    <a onclick="redirectToIphones()" class="dropdown-item cus-p">iPhones</a>
+                     <a onclick="redirectToIphones()" class="dropdown-item cus-p">Samsung</a>
+                     <a onclick="redirectToIphones()" class="dropdown-item cus-p">iTEL</a>
+                     <a onclick="redirectToIphones()" class="dropdown-item cus-p">Tecno</a>
+                    <a onclick="redirectToIphones()" class="dropdown-item cus-p">Redmi</a>
+                    <a onclick="redirectToIphones()" class="dropdown-item cus-p">free-space-3</a>
+                    <a onclick="redirectToIphones()" class="dropdown-item cus-p">free-space-4</a>
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <a href="accessories.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Accessories</a>
+                <a class="nav-link dropdown-toggle cus-p" data-bs-toggle="dropdown">Accessories</a>
                 <div class="dropdown-menu fade-up m-0">
-                    <a href="accessories.html" class="dropdown-item">Speakers & HeadPhones</a>
-                    <a href="accessories.html" class="dropdown-item">Phone Casing</a>
-                    <a href="accessories.html" class="dropdown-item">Charger</a>
-                    <a href="accessories.html" class="dropdown-item">#</a>
-                    <a href="accessories.html" class="dropdown-item">#</a>
+                    <a onclick="redirectToAccessories()" class="dropdown-item cus-p">Speakers & HeadPhones</a>
+                    <a onclick="redirectToAccessories()" class="dropdown-item cus-p">Phone Casing</a>
+                    <a onclick="redirectToAccessories()" class="dropdown-item cus-p">Charger</a>
+                    <a onclick="redirectToAccessories()" class="dropdown-item cus-p">Batteries</a>
+                    <!-- <a onclick="redirectToAccessories()" class="dropdown-item cus-p">#</a> -->
                     <!-- <a href="#.html" class="dropdown-item">free-space-3</a> -->
                     <!-- <a href="#.html" class="dropdown-item">free-space-4</a> -->
                 </div>
@@ -90,9 +90,9 @@
                 <div class="dropdown-menu fade-up m-0">
                 <a onclick="redirectToConsole()" class="dropdown-item cus-p">PlayStation</a>
                 <a onclick="redirectToConsole()" class="dropdown-item cus-p">X-Box</a>
-                <a onclick="redirectToConsole()" class="dropdown-item cus-p">free-space-1</a>
+                <!-- <a onclick="redirectToConsole()" class="dropdown-item cus-p">free-space-1</a>
                 <a onclick="redirectToConsole()" class="dropdown-item cus-p">free-space-2</a>
-                <a onclick="redirectToConsole()" class="dropdown-item cus-p">free-space-3</a>
+                <a onclick="redirectToConsole()" class="dropdown-item cus-p">free-space-3</a> -->
             </div>
         </div>
         <div class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
@@ -177,13 +177,12 @@
           <p>
             <ul class="p">
               <li>Core i5</li>
-              <li>4hrs battery uptime</li>
               <li>14 inch display</li>
               <li>8GB RAM/500GB HDD</li>
               <li>Processor 2.20GHz</li>
             </ul>
           </p>  
-          <a href="#">Place Order</a>
+          <a onclick="redirectCard1()" class="cus-p">Place Order</a>
         </div>
         <div class="visual">
           <img src="../images/Elitebook folio 9470M.jpg" alt="" />
@@ -205,7 +204,7 @@
               <li>Processor 2.70GHz</li>
             </ul>
           </p>  
-          <a href="#" class="center">Place Order</a>
+          <a onclick="redirectCard2()" class="center cus-p">Place Order</a>
         </div>
         <div class="visual">
           <img src="../images/macbook air 2015 11in.webp" alt="" />
@@ -225,7 +224,7 @@
               <li>4GB dedicated graphics</li>
             </ul>
           </p>  
-          <a href="#">Place Order</a>
+          <a onclick="redirectCard3()" class="cus-p">Place Order</a>
         </div>
         <div class="visual">
           <img src="../images/HP.png" alt="" />
@@ -242,11 +241,12 @@
               <li>Core i5 7th gen</li>
               <li>4hrs battery uptime</li>
               <li>14inches screen</li>
-              <li>4GB RAM/500GB ROM</li>
-              <li>Processor 1.9GHz</li>
+              <li>4GB RAM/32
+                0GB ROM</li>
+              <li>Processor 2.3GHz</li>
             </ul>
           </p>  
-          <a href="#">Place Order</a>
+          <a onclick="redirectCard4()" class="cus-p">Place Order</a>
         </div>
         <div class="visual">
           <img src="../images/HP probook 430 back.jpg" alt="" />
@@ -263,11 +263,11 @@
               <li>Core i5 6th gen</li>
               <li>4hrs battery uptime</li>
               <li>14 inches screen size</li>
-              <li>4GB RAM/ 500GB ROM</li>
-              <li>Processor 2.00GHz</li>
+              <li>8GB RAM/ 500GB ROM</li>
+              <li>Processor 1.7GHz</li>
             </ul>
           </p>  
-          <a href="#">Place Order</a>
+          <a onclick="redirectCard5()" class="cus-p">Place Order</a>
         </div>
         <div class="visual">
           <img src="../images/Dell inspiron 14z.webp" alt="" />
@@ -361,6 +361,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../script/redirect.js"></script>
 </div>
 </body>
 </html>

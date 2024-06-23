@@ -82,7 +82,7 @@ section.card .text-content a {
   color: #ffffff;
   align-self: flex-start;
   text-decoration: none;
-  padding: 16px 32px;
+  padding: 12px 32px;
   border-radius: 12px;
   transition: 400ms all;
   margin-left: 20%;
@@ -159,6 +159,7 @@ article {
   section.card .visual {
     border: 1.5px solid blue;
   }
+  
 }
 
 @media all and (max-width: 720px) {
