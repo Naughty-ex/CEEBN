@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,300,500);
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  /* padding: 96px; */
+  /* font-size: 21px; */
+  background: rgba(184, 173, 173, 0.349);
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  padding: 96px;
+}
+
+.marquee {
+  background-color: rgba(59, 48, 48, 0.096);
+  font-style: italic;
+  font-weight: 900;
+  /* font-size: 10px; */
+  cursor: pointer;
+  color: #000046;
+}
+
+.sub-nav {
+  background-color: #ffffffef;
+}
+
+.sub-nav p {
+  margin-left: 10px;
+}
+
+.box-container {
+  display: flex;
+  /* border: 2px solid red; */
+  padding: 5px;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.img-container {
+  display: flex;
+  padding: 10px;
+  /* border: 1px solid green; */
+  background-color: #ccc9c949;
+  border-radius: 20px;
+
+  img {
+    height: 450px;
+    width: 500px;
+    border-radius: 20px;
+  }
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  padding: 20px;
+
+  span {
+    color: red;
+  }
+}
+
+.buy-btn {
+  /* border: inherit; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.buy-btn button {
+  padding: 0.8em 1.8em;
+	border-radius: 8px;
+	background-color: transparent;
+	color:#17c3b2;
+	border:2px solid #17c3b2;
+	font-size: 16px;
+	cursor: pointer;
+	z-index: 1;
+	transition: 0.3s;
+	overflow:hidden ;
+	position: relative;
+}
+
+.buy-btn button a {
+  color: #17c3b2;
+}
+
+.buy-btn button:before {
+  content:'';
+	width: 0;
+	height: 300%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: 0.5s ease;
+	transform: translate(-50%,-50%) rotate(45deg);
+	display: block;
+	z-index: -1;
+	background-color: #17c3b2;
+}
+
+.buy-btn button:hover::before {
+  width: 105%;
+}
+
+.buy-btn button:hover {
+  a {
+    color:#111;
+  }
+  color:#111;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 1024px) {
+  /* body {
+    padding: 96px 48px 24px;
+  } */
+  article {
+    width: 100%;
+    min-width: 100%;
+  }
+  section.card {
+    min-width: 100%;
+    margin: 64px 0;
+    padding: 88px 36px 36px;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+  section.card .text-content {
+    width: 100%;
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 0px;
+  }
+
+  section.card .visual {
+    width: 150px;
+    height: 150px;
+    right: 16px;
+    left: auto;
+    border-radius: 50%;
+  }
+
+  section.card .visual img{
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media all and (min-width: 1025px) {
+  section.card .text-content {
+    width: 100%;
+    /* max-width:calc(100% - 150px); */
+    font-size: 1em;
+    margin-left: 20px;
+  }
+
+  section.card .visual {
+    border: 1.5px solid blue;
+  }
+}
+
+@media all and (max-width: 720px) {
+  /* body {
+    padding: 48px 24px 0;
+  } */
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 5px;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  
+  .img-container {
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid green; */
+    background-color: #ccc9c99c;
+    justify-content: center;
+  
+    img {
+      height: 250px;
+      width: 300px;
+      border-radius: 20px;
+    }
+  }
+
+  main {
+    padding: 48px 24px 0;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    padding: 20px;
+  
+    span {
+      color: red;
+      font-size: 22px;
+    }
+  }
+  
+  .buy-btn {
+    /* border: inherit; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    justify-content: center;
+    width: 300px;
+    margin-top: 80px;
+    /* gap: 20px; */
+    
+  }
+  
+  .buy-btn button {
+    padding: 0.8em 1.8em;
+    border-radius: 8px;
+    background-color: transparent;
+    color:#17c3b2;
+    border:2px solid #17c3b2;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+    overflow:hidden ;
+    position: relative;
+    font-weight: 800;
+  }
+  
+  .buy-btn button:before {
+    content:'';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease;
+    transform: translate(-50%,-50%) rotate(45deg);
+    display: block;
+    z-index: -1;
+    background-color: #17c3b2;
+  }
+  
+  .buy-btn button:hover::before {
+    width: 105%;
+  }
+  
+  .buy-btn button:hover {
+    color:#111;
+  }
+
+  
+}

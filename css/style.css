@@ -129,6 +129,7 @@
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
+    cursor: pointer;
 }
 
 
@@ -360,6 +361,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+.cus-p {
+    cursor: pointer;
 }
 
 .testimonial-carousel .owl-dot {
